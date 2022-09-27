@@ -1,0 +1,248 @@
+/* Base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000000de;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 2.4rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable classes */
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 6px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+/*HEADER*/
+
+section header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+section header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section header ul li {
+  margin-left: 20px;
+}
+
+section header ul li a {
+  color: #111;
+  font-size: 13px;
+}
+
+section header ul li button {
+  background: #4584ef;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.icon-menu {
+  width: 15px;
+}
+/*MAIN*/
+
+.input-search {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-search .search {
+  width: 100%;
+  padding: 13px;
+  padding-left: 45px;
+  padding-right: 60px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.logo-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+.micro-icon,
+.search-icon {
+  width: 25px;
+}
+.input-search .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 0 5px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.buttons button:hover {
+  border: 1px solid #ccc;
+}
+
+.visit {
+  display: flex;
+  margin-top: 30px;
+}
+
+.visit a {
+  color: #4584ef;
+}
+
+.visit a:hover {
+  text-decoration: underline;
+}
+
+/*FOOTER*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.row .country {
+  color: #5f6368;
+  font-size: 16px;
+  padding: 15px 25px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.carbone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.carbone-icon {
+  width: 15px;
+  margin-right: 6px;
+}
+
+.carbone p {
+  color: #5f6368;
+  font-size: 16px;
+}
+
+.row .liens {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grp-liens {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.liens ul {
+  display: flex;
+  padding: 15px 25px;
+}
+
+.liens ul li a {
+  font-size: 14px;
+  color: #5f6368;
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 1317px) {
+  .grp-liens {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 728px) {
+    .grp-liens {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  }
+  
